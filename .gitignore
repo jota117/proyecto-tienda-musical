@@ -7,16 +7,19 @@ tiendamusical-data/.settings
 tiendamusical-data/.classpath
 tiendamusical-data/.project
 tiendamusical-data/target
+tiendamusical-data/.factorypath
 
 tiendamusical-entities/.settings
 tiendamusical-entities/.classpath
 tiendamusical-entities/.project
 tiendamusical-entities/target
+tiendamusical-entities/.factorypath
 
 tiendamusical-services/.settings
 tiendamusical-services/.classpath
 tiendamusical-services/.project
 tiendamusical-services/target
+tiendamusical-services/.factorypath
 
 tiendamusical-web/.settings
 tiendamusical-web/.classpath
