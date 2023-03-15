@@ -64,7 +64,7 @@
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	
 	<!-- ::::::::::::::::::ETIQUETA  QUE PERMITE REGISTRAR LAS CLASES QUE SE ENCARGAN DE EJECUTAR TRANSACCIONES-->
-	<jpa:repositories base-package="com.buenmaestro.tiendaMusicaldata.repositories" entity-manager-factory-ref="entityManagerFactory"></jpa:repositories>
+	<jpa:repositories base-package="com.dev.tiendaMusicaldata.dao" entity-manager-factory-ref="entityManagerFactory"></jpa:repositories>
 
 
 

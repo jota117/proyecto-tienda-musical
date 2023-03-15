@@ -9,9 +9,7 @@
 	</context-param>
 
 	<listener>
-		<listener-class>
-			org.springframework.web.context.ContextLoaderListener
-		</listener-class>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	
 	<!-- Change to "Production" when you are ready to deploy -->
@@ -28,7 +26,8 @@
 
 	<!-- Welcome page -->
 	<welcome-file-list>
-		<welcome-file>login.xhtml</welcome-file>
+ 		<welcome-file>login.xhtml</welcome-file>
+	<!--	<welcome-file>index.jsp</welcome-file> -->
 	</welcome-file-list>
 
 	<!-- JSF mapping -->
