@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<ui:include src="/pages/commons/scripts.xhtml"></ui:include>
+
+
+</h:head>
+
+<h:body style="background-color: black">
+	<div class="ui-fluid">
+		<h:form id="formDashboard">
+			
+			<div class="p-grid sample-Layout">
+				<div class="p-col-12 p-md-2" style="background-color: black">
+				
+				Encabezado
+
+
+
+				</div>
+
+				<div class="p-col-12 p-md-10 p-col-nogutter"
+					style="background-color: black">
+					<div class="p-grid">
+						<div class="p-col-12">
+						<ui:include src="/pages/cliente/home.xhtml"></ui:include>
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="p-col-12" style="background-color: black">
+				Pie de Pagina
+				</div>
+				
+
+			</div>
+
+		</h:form>
+
+	</div>
+
+</h:body>
+
+</html>

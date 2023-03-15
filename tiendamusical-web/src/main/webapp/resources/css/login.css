@@ -1,0 +1,11 @@
+body .ui-panelgrid .ui-panelgrid-cell{
+	background-color: black;
+}
+
+body .ui-panel .ui-panel-content{
+	background-color: black;
+}
+
+.colorText{
+	color:white;
+}

@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no"></meta>
+	<h:outputStylesheet library="css" name="login.css"></h:outputStylesheet>
+
+</h:head>
+
+<h:body style="background-color: black">
+	<div class="ui-fluid">
+		<h:form id="formLogin">
+
+			<p:growl id="growl" showDetail="true" skipDetailSummary="true"/>
+
+			<p:panel id="pnlLogin" header="Inicio de Sesion" style="text-align: center; background-color: black">
+
+				<p:graphicImage name="imagenes/musica.png" width="15%"/>
+
+				<p:panelGrid id="pnlGridLogin" columns="2"
+					columnClasses="ui-g-12 ui-md-12,ui-g-12 ui-md-12" layout="grid"
+					styleClass="ui-panelgrid-blank ui-fluid">
+
+					<p:outputLabel value="Usuario: " styleClass="colorText"
+						for="txtUsuario" style="float: left"></p:outputLabel>
+					<p:inputText id="txtUsuario" value="#{loginController.usuario}"
+						required="true" requiredMessage="El usuario es requerido"></p:inputText>
+
+					<p:outputLabel value="Contraseña: " styleClass="colorText"
+						for="txtPassword" style="float: left"></p:outputLabel>
+					<p:password id="txtPassword" value="#{loginController.password}"
+						required="true" requiredMessage="La contraseña es requerida"></p:password>
+
+					<p:outputLabel></p:outputLabel>
+					<p:commandButton value="Entrar"
+						action="#{loginController.entrar}" update="pnlGridLogin, growl"></p:commandButton>
+
+				</p:panelGrid>
+
+			</p:panel>
+
+		</h:form>
+
+	</div>
+
+</h:body>
+
+
+
+</html>
